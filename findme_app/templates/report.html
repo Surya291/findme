@@ -1,0 +1,36 @@
+<!DOCTYPE=html>
+<html>
+<head>
+    <title>
+        Store Report
+    </title>
+</head>
+<body>
+    {{first_event}} {{second_event}}
+
+    <ul>
+    	
+    <form action = '#' method = 'post'>
+    {% for key in display_i2c %}
+    <li>
+    	
+    	<img align="center" src="static/cluster/{{key}}" >
+    	
+			
+				{% for val in display_i2c[key] %}
+					<input type="text" id={{val}} name={{val}} placeholder="Enter name of {{val}}"></input>
+					
+				{% endfor %}
+				
+			
+    </li>
+
+  	
+    {% endfor %}
+    <button type="submit">Enter</button> 
+    </form>
+
+    </ul>
+
+</body>
+</html>

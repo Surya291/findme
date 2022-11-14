@@ -1,0 +1,4 @@
+numpy
+dlib
+face_recognition
+shutil
